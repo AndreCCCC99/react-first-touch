@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Home from "./Views/Home";
 import Profile from "./Views/Profile";
+import Navbar from "./Components/Navbar"
+
 
 //hooks só podem ser usados em function components
 //não funcionam em class components
@@ -23,18 +25,8 @@ function App() {
 
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/Profile">Profile</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+
+    <Navbar/>
 
       <button onClick={decrement}>-</button>
       <span>0</span>
